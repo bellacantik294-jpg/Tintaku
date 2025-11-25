@@ -1,9 +1,0 @@
-
-body { margin:0; font-family:Arial; background:#fafafa; color:#222; }
-.header { background:#111; color:white; padding:15px; display:flex; justify-content:space-between; align-items:center; }
-.header nav a { color:white; margin-left:15px; text-decoration:none; }
-.btn-donate { background:#ff004c; padding:8px 14px; border-radius:6px; }
-.hero { padding:40px; text-align:center; background:white; }
-.cerpen-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:20px; padding:20px; }
-.card { background:white; padding:20px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,.1); }
-.footer { text-align:center; padding:20px; margin-top:40px; background:#111; color:white; }
