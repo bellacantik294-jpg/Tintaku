@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin – Air Mata Kertas PRO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Admin</h1>
+
+<section>
+    <h2>Tambah Cerpen Baru</h2>
+
+    <form id="adminForm">
+        <label>Judul</label>
+        <input type="text" id="adminTitle" required>
+
+        <label>Kategori</label>
+        <input type="text" id="adminCategory" placeholder="Romantis, Horor, dll">
+
+        <label>Ringkasan (cover)</label>
+        <input type="text" id="adminSummary">
+
+        <label>Isi Cerpen</label>
+        <textarea id="adminContent" rows="10" required></textarea>
+
+        <button type="submit">Simpan ke Penyimpanan Lokal</button>
+    </form>
+</section>
+
+<hr>
+
+<h2>Cerpen di LocalStorage</h2>
+<div id="adminList"></div>
+
+<p><a href="index.html">Kembali</a></p>
+
+<script src="pro-script.js"></script>
+
+</body>
+</html>
