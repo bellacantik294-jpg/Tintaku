@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Daftar Cerpen — Air Mata Kertas PRO</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header class="site-header small">
+  <div class="container">
+    <h1 class="brand">Daftar Cerpen</h1>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="daftar-cerpen.html" class="active">Daftar Cerpen</a>
+      <a href="kategori.html">Kategori</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+
+    <div class="controls">
+      <input id="searchInputList" placeholder="Cari judul..." />
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section>
+
+    <div class="filters">
+      <label>Filter kategori:
+        <select id="categoryFilter">
+          <option value="">Semua</option>
+        </select>
+      </label>
+
+      <label>Urut:
+        <select id="sortSelect">
+          <option value="new">Terbaru</option>
+          <option value="alpha">A–Z</option>
+        </select>
+      </label>
+    </div>
+
+    <div id="list" class="cards-grid"></div>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><a href="index.html">Kembali</a></p>
+  </div>
+</footer>
+
+<script src="cerpen-data.js"></script>
+<script src="pro-script-indexeddb.js"></script>
+</body>
+</html>
