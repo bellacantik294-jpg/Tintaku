@@ -1,0 +1,32 @@
+
+<!DOCTYPE html><html><body>
+<h1>Admin Firebase</h1>
+<input id='title'><br>
+<input id='category'><br>
+<input id='summary'><br>
+<input id='cover' type='file'><br>
+<textarea id='content'></textarea><br>
+<button id='save'>Simpan</button>
+
+<script type='module'>
+import { saveCerpen } from './pro-firebase.js';
+
+document.getElementById('save').onclick = async ()=>{
+  let file = document.getElementById('cover').files[0];
+  let cover64="";
+  if(file){
+    cover64=await new Promise(r=>{let fr=new FileReader(); fr.onload=()=>r(fr.result); fr.readAsDataURL(file);});
+  }
+  await saveCerpen({
+    title: title.value,
+    category: category.value,
+    summary: summary.value,
+    content: content.value,
+    cover: cover64,
+    date: new Date().toISOString().slice(0,10)
+  });
+  alert("Tersimpan Firebase");
+};
+</script>
+<script type='module' src='firebase.js'></script>
+</body></html>

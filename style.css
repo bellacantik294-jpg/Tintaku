@@ -1,0 +1,15 @@
+
+/* Combined minimal styling (keeps original layout look) */
+:root { --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#f97316; --surface:#ffffff; }
+body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--surface); color:#082032; }
+.container{max-width:920px;margin:0 auto;padding:18px}
+.site-header{background:#fff;border-bottom:1px solid #e6e6e9;padding:12px 0}
+.site-header .brand{font-weight:700}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:12px}
+.card{background:#fff;padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.read-card{max-width:780px;margin:0 auto}
+.cover-img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+.cerpen-cover{width:100%;max-height:420px;object-fit:cover;border-radius:8px;margin-bottom:12px}
+.controls input{padding:6px 8px;border-radius:6px;border:1px solid #ddd}
+button{cursor:pointer;padding:8px 10px;border-radius:8px;border:none;background:var(--accent);color:white}
+.muted{color:#666;font-size:0.95rem}
