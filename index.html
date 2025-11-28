@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Air Mata Kertas — Pro (IndexedDB)</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <h1 class="brand">Air Mata Kertas <span class="badge">PRO</span></h1>
+    <nav>
+      <a href="index.html" class="active">Beranda</a>
+      <a href="daftar-cerpen.html">Daftar Cerpen</a>
+      <a href="kategori.html">Kategori</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+    <div class="controls">
+      <input id="searchInput" placeholder="Cari judul atau kata..." aria-label="Cari cerpen">
+      <button id="themeToggle" title="Toggle theme">🌙</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero card">
+    <h2>Selamat datang, pembaca</h2>
+    <p>Temukan cerpen, puisi, dan kisah singkat yang menggerakkan.</p>
+    <p class="muted">Klik kartu untuk baca. Gunakan search atau filter kategori untuk menemukan cerita.</p>
+    <div class="hero-actions">
+      <button id="randomBtn">Baca Cerpen Random</button>
+      <a href="daftar-cerpen.html" class="btn-outline">Lihat Semua Cerpen</a>
+    </div>
+  </section>
+
+  <section>
+    <h3>Rekomendasi untukmu</h3>
+    <div id="cards" class="cards-grid" aria-live="polite"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Air Mata Kertas — dibuat dengan ❤️</p>
+  </div>
+</footer>
+
+<script src="cerpen-data.js"></script>
+<script src="pro-script-indexeddb.js"></script>
+</body>
+</html>
